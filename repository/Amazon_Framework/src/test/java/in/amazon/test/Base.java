@@ -2,6 +2,8 @@ package in.amazon.test;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -12,6 +14,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -27,7 +31,7 @@ import in.amazon.lib.AppLib;
 
 public class Base {
 	public  WebDriver driver;
-	//ChromeOptions option = new ChromeOptions();
+	ChromeOptions option = new ChromeOptions();
 	public ExtentReports extentReports;
 	public ExtentTest extentTest;
 	private AppLib app;
@@ -42,10 +46,26 @@ public class Base {
 	}
 	
 	@BeforeTest
-	public void setup() {
+	public void setup() throws MalformedURLException {
+		/*//BROWSER => chrome/firefox
+		//HUB_HOST => localhost / 172.18.0.4 /hostname
+		String host = "localhost";
+		DesiredCapabilities dc = DesiredCapabilities.chrome();
+		
+		if(System.getProperty("BROWSER")!= null 
+				&& System.getProperty("BROWSER").equalsIgnoreCase("firefox")) {
+			dc =DesiredCapabilities.firefox();
+		}
+		
+		if(System.getProperty("HUB_HOST")!= null) {
+			host = System.getProperty("HUB_HOST");
+		}
+		
+		String completeUrl = "http://" + host + ":4444/wd/hub";
+		this.driver = new RemoteWebDriver(new URL(completeUrl), dc);*/
 		
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver.exe");
-		//option.setBinary(System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver.exe");
+		option.setBinary(System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		app = new AppLib(driver);
 	}
@@ -75,7 +95,7 @@ public class Base {
 
 	@AfterTest
 	public void tearDown() {
-		driver.close();
+		driver.quit();
 	}
 	
 	@AfterSuite
@@ -89,7 +109,7 @@ public class Base {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		//after execution, folder is created for faied screenshot
-		String destination = System.getProperty("user.dir")+"/FailedTestCasesScreenShots"+screenshotName+dateName+".png";
+		String destination = System.getProperty("user.dir")+"/FailedTestCasesScreenShots/"+screenshotName+dateName+".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
 		return destination;

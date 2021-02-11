@@ -2,39 +2,39 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="12526" started-at="2021-01-29T01:21:22 IST" finished-at="2021-01-29T01:21:34 IST">
+  <suite name="Suite" duration-ms="81993" started-at="2021-01-31T20:45:15 IST" finished-at="2021-01-31T20:46:37 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="12526" started-at="2021-01-29T01:21:22 IST" finished-at="2021-01-29T01:21:34 IST">
+    <test name="Test" duration-ms="81993" started-at="2021-01-31T20:45:15 IST" finished-at="2021-01-31T20:46:37 IST">
       <class name="in.amazon.test.SignIn">
-        <test-method status="PASS" signature="reportStart()[pri:0, instance:in.amazon.test.SignIn@525b461a]" name="reportStart" is-config="true" duration-ms="263" started-at="2021-01-29T01:21:22 IST" finished-at="2021-01-29T01:21:22 IST">
+        <test-method status="PASS" signature="reportStart()[pri:0, instance:in.amazon.test.SignIn@e874448]" name="reportStart" is-config="true" duration-ms="334" started-at="2021-01-31T20:45:15 IST" finished-at="2021-01-31T20:45:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportStart -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:in.amazon.test.SignIn@525b461a]" name="setup" is-config="true" duration-ms="3469" started-at="2021-01-29T01:21:22 IST" finished-at="2021-01-29T01:21:25 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:in.amazon.test.SignIn@e874448]" name="setup" is-config="true" duration-ms="42226" started-at="2021-01-31T20:45:15 IST" finished-at="2021-01-31T20:45:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="LinkSignInValidation()[pri:0, instance:in.amazon.test.SignIn@525b461a]" name="LinkSignInValidation" duration-ms="8638" started-at="2021-01-29T01:21:25 IST" finished-at="2021-01-29T01:21:34 IST">
+        <test-method status="PASS" signature="LinkSignInValidation()[pri:0, instance:in.amazon.test.SignIn@e874448]" name="LinkSignInValidation" duration-ms="39274" started-at="2021-01-31T20:45:57 IST" finished-at="2021-01-31T20:46:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LinkSignInValidation -->
-        <test-method status="PASS" signature="screenshotReport(org.testng.ITestResult)[pri:0, instance:in.amazon.test.SignIn@525b461a]" name="screenshotReport" is-config="true" duration-ms="4" started-at="2021-01-29T01:21:34 IST" finished-at="2021-01-29T01:21:34 IST">
+        <test-method status="PASS" signature="screenshotReport(org.testng.ITestResult)[pri:0, instance:in.amazon.test.SignIn@e874448]" name="screenshotReport" is-config="true" duration-ms="46" started-at="2021-01-31T20:46:37 IST" finished-at="2021-01-31T20:46:37 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LinkSignInValidation status=SUCCESS method=SignIn.LinkSignInValidation()[pri:0, instance:in.amazon.test.SignIn@525b461a] output={null}]]]>
+                <![CDATA[[TestResult name=LinkSignInValidation status=SUCCESS method=SignIn.LinkSignInValidation()[pri:0, instance:in.amazon.test.SignIn@e874448] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotReport -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:in.amazon.test.SignIn@525b461a]" name="tearDown" is-config="true" duration-ms="353" started-at="2021-01-29T01:21:34 IST" finished-at="2021-01-29T01:21:34 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:in.amazon.test.SignIn@e874448]" name="tearDown" is-config="true" duration-ms="330" started-at="2021-01-31T20:46:37 IST" finished-at="2021-01-31T20:46:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:in.amazon.test.SignIn@525b461a]" name="endReport" is-config="true" duration-ms="452" started-at="2021-01-29T01:21:35 IST" finished-at="2021-01-29T01:21:35 IST">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:in.amazon.test.SignIn@e874448]" name="endReport" is-config="true" duration-ms="1770" started-at="2021-01-31T20:46:38 IST" finished-at="2021-01-31T20:46:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

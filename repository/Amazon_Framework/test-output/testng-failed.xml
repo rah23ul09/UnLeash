@@ -10,7 +10,7 @@
           <include name="screenshotReport"/>
           <include name="setup"/>
           <include name="reportStart"/>
-          <include name="LinkSignInValidation"/>
+          <include name="textEmailAndButtonContinueValidation"/>
         </methods>
       </class> <!-- in.amazon.test.SignIn -->
     </classes>

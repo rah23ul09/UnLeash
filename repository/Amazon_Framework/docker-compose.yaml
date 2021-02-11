@@ -1,17 +1,23 @@
 version: "3"
 services:
   hub:
-    image: selenium/hub:3.14
+    image: selenium/hub
     ports:
       - "4444:4444"
   chrome:
-    image: selenium/node-chrome:3.14
+    image: selenium/node-chrome
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+  chrome:
+    image: selenium/node-chrome
     depends_on:
       - hub
     environment:
       - HUB_HOST=hub
   firefox:
-    image: selenium/node-firefox:3.14
+    image: selenium/node-firefox
     depends_on:
       - hub
     environment:

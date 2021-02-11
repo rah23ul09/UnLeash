@@ -6,16 +6,23 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SignInElement {
+
+	public WebDriver driver;
 	
-	WebDriver driver;
+	@FindBy(xpath = "//i[@class='a-icon a-icon-logo']")
+	public WebElement logoAmazon;
 	
-	@FindBy(xpath = "//a[@id='nav-link-accountList']")
-	public WebElement navAccntList;
+	@FindBy(xpath = "//h1[contains(text(),'Sign-In')]")
+	public WebElement titleAmazon;
 	
-	@FindBy(linkText = "Sign in")
-	public WebElement linkSignIn;
+	@FindBy(xpath = "//label[contains(text(),'Email or mobile phone number')]")
+	public WebElement labelInfo;
 	
-	//span[@class='nav-action-inner']/ancestor::div[@id='nav-flyout-ya-signin']
+	@FindBy(xpath = "//input[@id='ap_email']")
+	public WebElement textEmailId;
+	
+	@FindBy(xpath = "//input[@id='continue']")
+	public WebElement buttonContinue;
 	
 	public SignInElement(WebDriver driver) {
 		this.driver = driver;
