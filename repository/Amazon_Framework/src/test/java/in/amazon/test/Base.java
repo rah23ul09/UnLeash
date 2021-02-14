@@ -47,7 +47,7 @@ public class Base {
 	
 	@BeforeTest
 	public void setup() throws MalformedURLException {
-		/*//BROWSER => chrome/firefox
+		//BROWSER => chrome/firefox
 		//HUB_HOST => localhost / 172.18.0.4 /hostname
 		String host = "localhost";
 		DesiredCapabilities dc = DesiredCapabilities.chrome();
@@ -62,10 +62,10 @@ public class Base {
 		}
 		
 		String completeUrl = "http://" + host + ":4444/wd/hub";
-		this.driver = new RemoteWebDriver(new URL(completeUrl), dc);*/
+		this.driver = new RemoteWebDriver(new URL(completeUrl), dc);
 		
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver.exe");
-		option.setBinary(System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver.exe");
+		/*System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver.exe");
+		option.setBinary(System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver.exe");*/
 		driver = new ChromeDriver();
 		app = new AppLib(driver);
 	}
