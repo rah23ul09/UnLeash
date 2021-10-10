@@ -1,7 +1,38 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 1, Errors: 0, Skipped: 10, Time elapsed: 32.45 s <<< FAILURE! - in TestSuite
-in.amazon.test.SignIn.setup  Time elapsed: 31.095 s  <<< FAILURE!
-java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 10, Time elapsed: 10.934 s <<< FAILURE! - in TestSuite
+in.amazon.test.SignIn.setup  Time elapsed: 10 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 92.0.4515.131 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-70LASCE', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0096B963+483]
+	GetHandleVerifier [0x0096B941+449]
+	GetHandleVerifier [0x00D13308+3832712]
+	GetHandleVerifier [0x00D2D69A+3940122]
+	GetHandleVerifier [0x00D29AFB+3924859]
+	GetHandleVerifier [0x00D27D9C+3917340]
+	GetHandleVerifier [0x00D4E7FE+4075646]
+	GetHandleVerifier [0x00D4E56C+4074988]
+	GetHandleVerifier [0x00D4B2EB+4062059]
+	GetHandleVerifier [0x00D2ED14+3945876]
+	GetHandleVerifier [0x00D2FBCE+3949646]
+	GetHandleVerifier [0x00D2FB59+3949529]
+	Ordinal0 [0x0092B5CC+46540]
+	Ordinal0 [0x00929F53+40787]
+	Ordinal0 [0x00929B12+39698]
+	GetHandleVerifier [0x00C31468+2907368]
+	GetHandleVerifier [0x00A771EE+1096302]
+	GetHandleVerifier [0x00A33E8D+821005]
+	GetHandleVerifier [0x00A3396B+819691]
+	GetHandleVerifier [0x00A33881+819457]
+	GetHandleVerifier [0x00A5F463+998627]
+	BaseThreadInitThunk [0x76B3FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37A4E+238]
+
 

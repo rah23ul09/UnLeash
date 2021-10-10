@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/user/IdeaProjects/SeleniumDocker">
+        <classes>
+            <class name="com.OrangeHRM.tests.Base.LoginTest">
+                <methods>
+                    <include name="LogoAndLoginImageValidation"/>
+                    <include name="LoginValidation"/>
+                </methods>
+            </class>
+            <class name="com.OrangeHRM.tests.Base.HomeHeaderTest">
+                <methods>
+                    <include name="HeaderComponentsValidation"/>
+                    <include name="AboutValidation"/>
+                    <include name="CloseAboutValidation"/>
+                    <include name="LogoutValidation"/>
+                </methods>
+            </class>
+            <class name="com.OrangeHRM.tests.Base.FirstLevelMenuBarTest">
+                <methods>
+                    <include name="FirstLeveMenuBarValidation"/>
+                </methods>
+            </class>
+            <class name="com.OrangeHRM.tests.Admin.UserManagementTest">
+                <methods>
+                    <include name="ToggleBarValidation"/>
+                    <include name="UserSearchValidation"/>
+                    <include name="UserResetValidation"/>
+                    <include name="AddUserValidation"/>
+                    <include name="DeleteUserValidation"/>
+                </methods>
+            </class>
+            <class name="com.OrangeHRM.tests.Admin.JobTest">
+                <methods>
+                    <include name="JobTitleValidation"/>
+                    <include name="PayGradesValidation"/>
+                    <include name="EmploymentStatusValidation"/>
+                    <include name="JobCategoryValidation"/>
+                    <include name="WorkShiftValidation"/>
+                </methods>
+            </class>
+            <class name="com.OrangeHRM.tests.Admin.OrganizationTest">
+                <methods>
+                    <include name="GeneralInformationValidation"/>
+                    <include name="LocationsValidation"/>
+                    <include name="StructureValidation"/>
+                </methods>
+            </class>
+            <class name="com.OrangeHRM.tests.Admin.QualificationTest">
+                <methods>
+                    <include name="SkillsValidation"/>
+                    <include name="EducationValidation"/>
+                    <include name="LicensesValidation"/>
+                    <include name="LanguagesValidation"/>
+                    <include name="MembershipsValidation"/>
+                </methods>
+            </class>
+            <class name="com.OrangeHRM.tests.Admin.ConfigurationTest">
+                <methods>
+                    <include name="EmailConfigurationValidation"/>
+                    <include name="EmailSubscriptionValidation"/>
+                    <include name="LocalizationValidation"/>
+                    <include name="LanguagePackagesValidation"/>
+                    <include name="ModulesValidation"/>
+                    <include name="SocialMediaAuthValidation"/>
+                    <include name="RegisterOAuthClientValidation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

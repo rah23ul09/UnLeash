@@ -5,11 +5,14 @@
     <classes>
       <class name="in.amazon.test.SignIn">
         <methods>
+          <include name="amazonTitleValidation"/>
           <include name="tearDown"/>
+          <include name="amazonLogoValidation"/>
           <include name="endReport"/>
           <include name="screenshotReport"/>
           <include name="setup"/>
           <include name="reportStart"/>
+          <include name="informationLabelValidation"/>
           <include name="textEmailAndButtonContinueValidation"/>
         </methods>
       </class> <!-- in.amazon.test.SignIn -->

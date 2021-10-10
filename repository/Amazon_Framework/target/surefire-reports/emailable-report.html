@@ -9,65 +9,290 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num">0</td><td class="num">28,834</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num">0</td><td class="num">7,487</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">in.amazon.test.SignIn</td><td><a href="#m0">setup</a></td><td rowspan="1">1613830281849</td><td rowspan="1">28564</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="6">in.amazon.test.SignIn</td><td><a href="#m1">endReport</a></td><td rowspan="1">1613830310980</td><td rowspan="1">-1613830310980</td></tr><tr class="skippedeven"><td><a href="#m2">screenshotReport</a></td><td rowspan="4">1613830310670</td><td rowspan="4">-1613830310670</td></tr><tr class="skippedeven"><td><a href="#m3">screenshotReport</a></td></tr><tr class="skippedeven"><td><a href="#m4">screenshotReport</a></td></tr><tr class="skippedeven"><td><a href="#m5">screenshotReport</a></td></tr><tr class="skippedeven"><td><a href="#m6">tearDown</a></td><td rowspan="1">1613830310683</td><td rowspan="1">-1613830310683</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">in.amazon.test.SignIn</td><td><a href="#m7">amazonLogoValidation</a></td><td rowspan="1">1613830310666</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m8">amazonTitleValidation</a></td><td rowspan="1">1613830310672</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m9">informationLabelValidation</a></td><td rowspan="1">1613830310675</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m10">textEmailAndButtonContinueValidation</a></td><td rowspan="1">1613830310678</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">in.amazon.test.SignIn</td><td><a href="#m0">setup</a></td><td rowspan="1">1628364289640</td><td rowspan="1">7263</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="6">in.amazon.test.SignIn</td><td><a href="#m1">endReport</a></td><td rowspan="1">1628364297293</td><td rowspan="1">-1628364297293</td></tr><tr class="skippedeven"><td><a href="#m2">screenshotReport</a></td><td rowspan="4">1628364297090</td><td rowspan="4">-1628364297090</td></tr><tr class="skippedeven"><td><a href="#m3">screenshotReport</a></td></tr><tr class="skippedeven"><td><a href="#m4">screenshotReport</a></td></tr><tr class="skippedeven"><td><a href="#m5">screenshotReport</a></td></tr><tr class="skippedeven"><td><a href="#m6">tearDown</a></td><td rowspan="1">1628364297126</td><td rowspan="1">-1628364297126</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">in.amazon.test.SignIn</td><td><a href="#m7">amazonLogoValidation</a></td><td rowspan="1">1628364297086</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m8">amazonTitleValidation</a></td><td rowspan="1">1628364297092</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m9">informationLabelValidation</a></td><td rowspan="1">1628364297095</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m10">textEmailAndButtonContinueValidation</a></td><td rowspan="1">1628364297097</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">in.amazon.test.SignIn#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+<h2>Test</h2><h3 id="m0">in.amazon.test.SignIn#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 92.0.4515.131 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-70LASCE&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0096B963+483]
+	GetHandleVerifier [0x0096B941+449]
+	GetHandleVerifier [0x00D13308+3832712]
+	GetHandleVerifier [0x00D2D69A+3940122]
+	GetHandleVerifier [0x00D29AFB+3924859]
+	GetHandleVerifier [0x00D27D9C+3917340]
+	GetHandleVerifier [0x00D4E7FE+4075646]
+	GetHandleVerifier [0x00D4E56C+4074988]
+	GetHandleVerifier [0x00D4B2EB+4062059]
+	GetHandleVerifier [0x00D2ED14+3945876]
+	GetHandleVerifier [0x00D2FBCE+3949646]
+	GetHandleVerifier [0x00D2FB59+3949529]
+	Ordinal0 [0x0092B5CC+46540]
+	Ordinal0 [0x00929F53+40787]
+	Ordinal0 [0x00929B12+39698]
+	GetHandleVerifier [0x00C31468+2907368]
+	GetHandleVerifier [0x00A771EE+1096302]
+	GetHandleVerifier [0x00A33E8D+821005]
+	GetHandleVerifier [0x00A3396B+819691]
+	GetHandleVerifier [0x00A33881+819457]
+	GetHandleVerifier [0x00A5F463+998627]
+	BaseThreadInitThunk [0x76B3FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37A4E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at in.amazon.test.Base.setup(Base.java:69)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at in.amazon.test.Base.setup(Base.java:71)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">in.amazon.test.SignIn#endReport</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">in.amazon.test.SignIn#screenshotReport</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">in.amazon.test.SignIn#screenshotReport</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">in.amazon.test.SignIn#screenshotReport</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">in.amazon.test.SignIn#screenshotReport</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m6">in.amazon.test.SignIn#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">in.amazon.test.SignIn#amazonLogoValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+<h3 id="m7">in.amazon.test.SignIn#amazonLogoValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 92.0.4515.131 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-70LASCE&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0096B963+483]
+	GetHandleVerifier [0x0096B941+449]
+	GetHandleVerifier [0x00D13308+3832712]
+	GetHandleVerifier [0x00D2D69A+3940122]
+	GetHandleVerifier [0x00D29AFB+3924859]
+	GetHandleVerifier [0x00D27D9C+3917340]
+	GetHandleVerifier [0x00D4E7FE+4075646]
+	GetHandleVerifier [0x00D4E56C+4074988]
+	GetHandleVerifier [0x00D4B2EB+4062059]
+	GetHandleVerifier [0x00D2ED14+3945876]
+	GetHandleVerifier [0x00D2FBCE+3949646]
+	GetHandleVerifier [0x00D2FB59+3949529]
+	Ordinal0 [0x0092B5CC+46540]
+	Ordinal0 [0x00929F53+40787]
+	Ordinal0 [0x00929B12+39698]
+	GetHandleVerifier [0x00C31468+2907368]
+	GetHandleVerifier [0x00A771EE+1096302]
+	GetHandleVerifier [0x00A33E8D+821005]
+	GetHandleVerifier [0x00A3396B+819691]
+	GetHandleVerifier [0x00A33881+819457]
+	GetHandleVerifier [0x00A5F463+998627]
+	BaseThreadInitThunk [0x76B3FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37A4E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at in.amazon.test.Base.setup(Base.java:69)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">in.amazon.test.SignIn#amazonTitleValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at in.amazon.test.Base.setup(Base.java:71)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">in.amazon.test.SignIn#amazonTitleValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 92.0.4515.131 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-70LASCE&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0096B963+483]
+	GetHandleVerifier [0x0096B941+449]
+	GetHandleVerifier [0x00D13308+3832712]
+	GetHandleVerifier [0x00D2D69A+3940122]
+	GetHandleVerifier [0x00D29AFB+3924859]
+	GetHandleVerifier [0x00D27D9C+3917340]
+	GetHandleVerifier [0x00D4E7FE+4075646]
+	GetHandleVerifier [0x00D4E56C+4074988]
+	GetHandleVerifier [0x00D4B2EB+4062059]
+	GetHandleVerifier [0x00D2ED14+3945876]
+	GetHandleVerifier [0x00D2FBCE+3949646]
+	GetHandleVerifier [0x00D2FB59+3949529]
+	Ordinal0 [0x0092B5CC+46540]
+	Ordinal0 [0x00929F53+40787]
+	Ordinal0 [0x00929B12+39698]
+	GetHandleVerifier [0x00C31468+2907368]
+	GetHandleVerifier [0x00A771EE+1096302]
+	GetHandleVerifier [0x00A33E8D+821005]
+	GetHandleVerifier [0x00A3396B+819691]
+	GetHandleVerifier [0x00A33881+819457]
+	GetHandleVerifier [0x00A5F463+998627]
+	BaseThreadInitThunk [0x76B3FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37A4E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at in.amazon.test.Base.setup(Base.java:69)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">in.amazon.test.SignIn#informationLabelValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at in.amazon.test.Base.setup(Base.java:71)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">in.amazon.test.SignIn#informationLabelValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 92.0.4515.131 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-70LASCE&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0096B963+483]
+	GetHandleVerifier [0x0096B941+449]
+	GetHandleVerifier [0x00D13308+3832712]
+	GetHandleVerifier [0x00D2D69A+3940122]
+	GetHandleVerifier [0x00D29AFB+3924859]
+	GetHandleVerifier [0x00D27D9C+3917340]
+	GetHandleVerifier [0x00D4E7FE+4075646]
+	GetHandleVerifier [0x00D4E56C+4074988]
+	GetHandleVerifier [0x00D4B2EB+4062059]
+	GetHandleVerifier [0x00D2ED14+3945876]
+	GetHandleVerifier [0x00D2FBCE+3949646]
+	GetHandleVerifier [0x00D2FB59+3949529]
+	Ordinal0 [0x0092B5CC+46540]
+	Ordinal0 [0x00929F53+40787]
+	Ordinal0 [0x00929B12+39698]
+	GetHandleVerifier [0x00C31468+2907368]
+	GetHandleVerifier [0x00A771EE+1096302]
+	GetHandleVerifier [0x00A33E8D+821005]
+	GetHandleVerifier [0x00A3396B+819691]
+	GetHandleVerifier [0x00A33881+819457]
+	GetHandleVerifier [0x00A5F463+998627]
+	BaseThreadInitThunk [0x76B3FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37A4E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at in.amazon.test.Base.setup(Base.java:69)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">in.amazon.test.SignIn#textEmailAndButtonContinueValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at in.amazon.test.Base.setup(Base.java:71)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">in.amazon.test.SignIn#textEmailAndButtonContinueValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 92.0.4515.131 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-70LASCE&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0096B963+483]
+	GetHandleVerifier [0x0096B941+449]
+	GetHandleVerifier [0x00D13308+3832712]
+	GetHandleVerifier [0x00D2D69A+3940122]
+	GetHandleVerifier [0x00D29AFB+3924859]
+	GetHandleVerifier [0x00D27D9C+3917340]
+	GetHandleVerifier [0x00D4E7FE+4075646]
+	GetHandleVerifier [0x00D4E56C+4074988]
+	GetHandleVerifier [0x00D4B2EB+4062059]
+	GetHandleVerifier [0x00D2ED14+3945876]
+	GetHandleVerifier [0x00D2FBCE+3949646]
+	GetHandleVerifier [0x00D2FB59+3949529]
+	Ordinal0 [0x0092B5CC+46540]
+	Ordinal0 [0x00929F53+40787]
+	Ordinal0 [0x00929B12+39698]
+	GetHandleVerifier [0x00C31468+2907368]
+	GetHandleVerifier [0x00A771EE+1096302]
+	GetHandleVerifier [0x00A33E8D+821005]
+	GetHandleVerifier [0x00A3396B+819691]
+	GetHandleVerifier [0x00A33881+819457]
+	GetHandleVerifier [0x00A5F463+998627]
+	BaseThreadInitThunk [0x76B3FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37A4E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at in.amazon.test.Base.setup(Base.java:69)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at in.amazon.test.Base.setup(Base.java:71)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

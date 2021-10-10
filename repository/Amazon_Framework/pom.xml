@@ -7,6 +7,8 @@
 	<artifactId>Amazon_Framework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+
+
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -107,8 +109,16 @@
 			</plugin>
 
 			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.7.0</version>
+				<groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <compilerVersion>1.8</compilerVersion>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <testSource>1.8</testSource>
+                    <testTarget>1.8</testTarget>
+                </configuration>
 			</plugin>
 
 			<plugin>
@@ -141,6 +151,6 @@
 					</execution>
 				</executions>
 			</plugin>
-	</plugins>
+		</plugins>
 	</build>
 </project>
